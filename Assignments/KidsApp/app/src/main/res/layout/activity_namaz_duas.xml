@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:background="#020A37"
+    tools:context=".Namaz_duas">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/titleImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/namaz_dua"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toTopOf="@id/topConstraint" />
+
+
+            <TextView
+                android:id="@+id/QalmaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NAMAZ DUAS"
+                android:textAlignment="center"
+                android:textColor="#C6AE66"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toBottomOf="@id/titleImage" />
+
+            <ImageView
+                android:id="@+id/headingLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:src="@drawable/l"
+                app:layout_constraintEnd_toEndOf="@id/QalmaTitle"
+                app:layout_constraintStart_toStartOf="@id/QalmaTitle"
+                app:layout_constraintTop_toBottomOf="@id/QalmaTitle" />
+
+            <ImageView
+                android:id="@+id/topLeftBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_left_border" />
+
+            <ImageView
+                android:id="@+id/topRightBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_right_border" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toStartOf="@+id/title2"
+            android:onClick="snaa"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topConstraint"
+            app:srcCompat="@drawable/qirat" />
+
+        <ImageView
+            android:id="@+id/titleImg1"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:onClick="snaa"
+            android:src="@drawable/title_frame"
+            app:layout_constraintEnd_toEndOf="@+id/title1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title1"
+            app:layout_constraintStart_toStartOf="@id/title1"
+            app:layout_constraintTop_toBottomOf="@id/title1" />
+
+        <TextView
+            android:id="@+id/titleTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ثناء"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg1"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg1"
+            app:layout_constraintTop_toTopOf="@id/titleImg1" />
+
+        <ImageView
+            android:id="@+id/title2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="72dp"
+            android:onClick="qirat"
+            android:layout_marginEnd="28dp"
+            app:layout_constraintBottom_toBottomOf="@id/title1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title1"
+            app:layout_constraintTop_toTopOf="@id/title1"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/qirat" />
+
+        <ImageView
+            android:id="@+id/titleImg2"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/title_frame"
+            android:onClick="qirat"
+            app:layout_constraintEnd_toEndOf="@+id/title2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title2"
+            app:layout_constraintStart_toStartOf="@id/title2"
+            app:layout_constraintTop_toBottomOf="@id/title2" />
+
+        <TextView
+            android:id="@+id/titleTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="قیرات, ثناء"
+            android:textColor="#C6AE66"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg2"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg2"
+            app:layout_constraintTop_toTopOf="@id/titleImg2" />
+
+        <ImageView
+            android:id="@+id/title3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="ruku"
+            app:layout_constraintEnd_toEndOf="@+id/title1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/title1"
+            app:layout_constraintTop_toBottomOf="@id/titleImg1"
+            app:srcCompat="@drawable/ruku" />
+
+        <ImageView
+            android:id="@+id/titleImg3"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/title_frame"
+            android:onClick="ruku"
+            app:layout_constraintEnd_toEndOf="@+id/title3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title3"
+            app:layout_constraintStart_toStartOf="@id/title3"
+            app:layout_constraintTop_toBottomOf="@id/title3" />
+
+        <TextView
+            android:id="@+id/titleTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رکوع"
+            android:textColor="#C6AE66"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg3"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg3"
+            app:layout_constraintTop_toTopOf="@id/titleImg3" />
+
+        <ImageView
+            android:id="@+id/title4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginEnd="28dp"
+            android:onClick="after_ruku"
+            app:layout_constraintBottom_toBottomOf="@id/title3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title3"
+            app:layout_constraintTop_toTopOf="@id/title3"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ruke_k_bad" />
+
+        <ImageView
+            android:id="@+id/titleImg4"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:onClick="after_ruku"
+            android:src="@drawable/title_frame"
+            app:layout_constraintEnd_toEndOf="@+id/title4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title4"
+            app:layout_constraintStart_toStartOf="@id/title4"
+            app:layout_constraintTop_toBottomOf="@id/title4" />
+
+        <TextView
+            android:id="@+id/titleTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رکوع کے بعد"
+            android:textColor="#C6AE66"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg4"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg4"
+            app:layout_constraintTop_toTopOf="@id/titleImg4" />
+
+        <ImageView
+            android:id="@+id/title5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="sajda"
+            app:layout_constraintEnd_toEndOf="@+id/title3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/title3"
+            app:layout_constraintTop_toBottomOf="@id/titleImg3"
+            app:srcCompat="@drawable/sjda" />
+
+        <ImageView
+            android:id="@+id/titleImg5"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:onClick="sajda"
+            android:src="@drawable/title_frame"
+            app:layout_constraintEnd_toEndOf="@+id/title5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title5"
+            app:layout_constraintStart_toStartOf="@id/title5"
+            app:layout_constraintTop_toBottomOf="@id/title5" />
+
+        <TextView
+            android:id="@+id/titleTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سجده"
+            android:textColor="#C6AE66"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg5"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg5"
+            app:layout_constraintTop_toTopOf="@id/titleImg5" />
+
+        <ImageView
+            android:id="@+id/title6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginEnd="28dp"
+            android:onClick="tashhad"
+            app:layout_constraintBottom_toBottomOf="@id/title5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title5"
+            app:layout_constraintTop_toTopOf="@id/title5"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/tshhad" />
+
+        <ImageView
+            android:id="@+id/titleImg6"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/title_frame"
+            android:onClick="tashhad"
+            app:layout_constraintEnd_toEndOf="@+id/title6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title6"
+            app:layout_constraintStart_toStartOf="@id/title6"
+            app:layout_constraintTop_toBottomOf="@id/title6" />
+
+        <TextView
+            android:id="@+id/titleTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تشہد"
+            android:textColor="#C6AE66"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg6"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg6"
+            app:layout_constraintTop_toTopOf="@id/titleImg6" />
+
+        <ImageView
+            android:id="@+id/title7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="darood_shareef"
+            app:layout_constraintEnd_toEndOf="@+id/title5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/title5"
+            app:layout_constraintTop_toBottomOf="@id/titleImg5"
+            app:srcCompat="@drawable/darood" />
+
+        <ImageView
+            android:id="@+id/titleImg7"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/title_frame"
+            android:onClick="darood_shareef"
+            app:layout_constraintEnd_toEndOf="@+id/title7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title7"
+            app:layout_constraintStart_toStartOf="@id/title7"
+            app:layout_constraintTop_toBottomOf="@id/title7" />
+
+        <TextView
+            android:id="@+id/titleTextView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="درود شریف"
+            android:textColor="#C6AE66"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg7"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg7"
+            app:layout_constraintTop_toTopOf="@id/titleImg7" />
+
+        <ImageView
+            android:id="@+id/title8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginEnd="28dp"
+            android:onClick="after_darood_shareef"
+            app:layout_constraintBottom_toBottomOf="@id/title7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title7"
+            app:layout_constraintTop_toTopOf="@id/title7"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/darood" />
+
+        <ImageView
+            android:id="@+id/titleImg8"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/title_frame"
+            android:onClick="after_darood_shareef"
+            app:layout_constraintEnd_toEndOf="@+id/title8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title8"
+            app:layout_constraintStart_toStartOf="@id/title8"
+            app:layout_constraintTop_toBottomOf="@id/title8" />
+
+        <TextView
+            android:id="@+id/titleTextView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="درودشریف کےبعد"
+            android:textColor="#C6AE66"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg8"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg8"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg8"
+            app:layout_constraintTop_toTopOf="@id/titleImg8" />
+
+        <ImageView
+            android:id="@+id/title9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="salaam"
+            app:layout_constraintEnd_toEndOf="@+id/title7"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/title7"
+            app:layout_constraintTop_toBottomOf="@id/titleImg7"
+            app:srcCompat="@drawable/salaam" />
+
+        <ImageView
+            android:id="@+id/titleImg9"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:src="@drawable/title_frame"
+            android:onClick="salaam"
+            app:layout_constraintEnd_toEndOf="@+id/title9"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title9"
+            app:layout_constraintStart_toStartOf="@id/title9"
+            app:layout_constraintTop_toBottomOf="@id/title9" />
+
+        <TextView
+            android:id="@+id/titleTextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سلام"
+            android:textColor="#C6AE66"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/titleImg9"
+            app:layout_constraintEnd_toEndOf="@+id/titleImg9"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/titleImg9"
+            app:layout_constraintTop_toTopOf="@id/titleImg9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

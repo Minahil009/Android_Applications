@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:background="#020A37"
+    tools:context=".Qalma1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/titleImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/kalma"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toTopOf="@id/topConstraint" />
+
+
+            <TextView
+                android:id="@+id/QalmaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QALMA 1"
+                android:textAlignment="center"
+                android:textColor="#C6AE66"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toBottomOf="@id/titleImage" />
+
+            <ImageView
+                android:id="@+id/headingLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:src="@drawable/l"
+                app:layout_constraintEnd_toEndOf="@id/QalmaTitle"
+                app:layout_constraintStart_toStartOf="@id/QalmaTitle"
+                app:layout_constraintTop_toBottomOf="@id/QalmaTitle" />
+
+            <ImageView
+                android:id="@+id/topLeftBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_left_border" />
+
+            <ImageView
+                android:id="@+id/topRightBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_right_border" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/QalmaMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="(TAYYAB)ِ"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topConstraint" />
+
+        <TextView
+            android:id="@+id/qalma1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="لَا إِلَٰهَ إِلَّا ٱللَّٰهُ مُحَمَّدٌ رَسُولُ ٱللَّٰهِ‎"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/QalmaMeaning" />
+
+        <TextView
+            android:id="@+id/EnglishMeaningTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRANSLATION IN ENGLISHِ"
+            android:textAlignment="textEnd"
+            android:textColor="#C6AE66"
+            android:padding="5dp"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/qalma1" />
+
+        <View
+            android:id="@+id/engBottomLine"
+            android:layout_height="2dp"
+            android:layout_width="130dp"
+            android:background="#C6AE66"
+            app:layout_constraintTop_toBottomOf="@id/EnglishMeaningTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/EnglishMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="There is no God Besides Allah, Hazrat Muhammad (SAW) is prophet of Allahِ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EnglishMeaningTitle" />
+
+
+        <TextView
+            android:id="@+id/UrduMeaningTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRANSLATION IN URDU"
+            android:textAlignment="textEnd"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EnglishMeaning" />
+
+        <View
+            android:id="@+id/urduBottomLine"
+            android:layout_height="2dp"
+            android:layout_width="130dp"
+            android:background="#C6AE66"
+            app:layout_constraintTop_toBottomOf="@id/UrduMeaningTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/UrduMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="اللّٰہ کے سوا کوئی عبادت کے لائق نہیں، مُحمّد(صلی اللّٰہ علیہ واٰلہٖ وسلَّم) اللّٰہ کے رسول ہیں۔ِ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UrduMeaningTitle" />
+
+        <!--<SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UrduMeaning" />
+
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradiant"
+            android:onClick="Play"
+            android:text="Play"
+            android:layout_marginLeft="10dp"
+            android:textColor="#514317"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/pause"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/seekBar" />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradiant"
+            android:onClick="Pause"
+            android:text="Pause"
+            android:layout_marginRight="10dp"
+            android:textColor="#514317"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/play"
+            app:layout_constraintTop_toBottomOf="@id/seekBar" />-->
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UrduMeaning"
+            android:padding="12dp"
+            >
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumbTint="#C6AE66"
+                android:progressTint="#C6AE66"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/player_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PlayRewind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear1">
+
+            <ImageView
+                android:id="@+id/bt_rew"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_fast_rewind_24" />
+
+            <ImageView
+                android:id="@+id/bt_play"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_play_circle_outline_24" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/bt_ff"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_baseline_fast_forward_24" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

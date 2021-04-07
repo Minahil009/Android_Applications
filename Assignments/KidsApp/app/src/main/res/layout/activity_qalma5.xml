@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:background="#020A37"
+    tools:context=".Qalma5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/titleImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/kalma"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toTopOf="@id/topConstraint" />
+
+
+            <TextView
+                android:id="@+id/QalmaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QALMA 5"
+                android:textAlignment="center"
+                android:textColor="#C6AE66"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toBottomOf="@id/titleImage" />
+
+            <ImageView
+                android:id="@+id/headingLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:src="@drawable/l"
+                app:layout_constraintEnd_toEndOf="@id/QalmaTitle"
+                app:layout_constraintStart_toStartOf="@id/QalmaTitle"
+                app:layout_constraintTop_toBottomOf="@id/QalmaTitle" />
+
+            <ImageView
+                android:id="@+id/topLeftBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_left_border" />
+
+            <ImageView
+                android:id="@+id/topRightBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_right_border" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/QalmaMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="(ASTAGHFAAR)ِ"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topConstraint" />
+
+        <TextView
+            android:id="@+id/qalma1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="أَسْتَغْفِرُ ٱللَّٰهَ رَبِّي مِنْ كُلِّ ذَنْبٍ أَذْنَبْتُهُ عَمْدًا أَوْ خَطَأً سِرًّا وَعَلَانِيَةً وَأَتُوبُ إِلَيْهِ مِنَ ٱلذَّنْبِ ٱلَّذِي أَعْلَمُ وَمِنَ ٱلذَّنْبِ ٱلَّذِي لَا أَعْلَمُ، إِنَّكَ أَنْتَ عَلَّامُ ٱلْغُيُوبِ وَسَتَّارُ ٱلْعُيُوْبِ وَغَفَّارُ ٱلذُّنُوبِ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّٰهِ ٱلْعَلِيِّ ٱلْعَظِيمِ‎"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/QalmaMeaning" />
+
+        <TextView
+            android:id="@+id/EnglishMeaningTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRANSLATION IN ENGLISHِ"
+            android:textAlignment="textEnd"
+            android:textColor="#C6AE66"
+            android:padding="5dp"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/qalma1" />
+
+        <View
+            android:id="@+id/engBottomLine"
+            android:layout_height="2dp"
+            android:layout_width="130dp"
+            android:background="#C6AE66"
+            app:layout_constraintTop_toBottomOf="@id/EnglishMeaningTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/EnglishMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="I seek forgiveness from ALLAH, who is my Creator and Cheriser, from every sin I committed knowingly or unknowingly, secretly or openly. I also seek His forgiveness for all sins which I am aware of or am not aware of. Certainly You (O ALLAH!), are the Knower of the hidden and the Concealer of mistakes and the Forgiver of sins. And there is no power and no strength except with ALLAH, the Most High, the Most Great.ِ"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EnglishMeaningTitle" />
+
+        <TextView
+            android:id="@+id/UrduMeaningTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="TRANSLATION IN URDU"
+            android:textAlignment="textEnd"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/EnglishMeaning" />
+
+        <View
+            android:id="@+id/urduBottomLine"
+            android:layout_height="2dp"
+            android:layout_width="130dp"
+            android:background="#C6AE66"
+            app:layout_constraintTop_toBottomOf="@id/UrduMeaningTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+
+        <TextView
+            android:id="@+id/UrduMeaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="میں اللًٰہ سے معافی مانگتا ہوں جو میرا پروردگار ہے اور گناہ سے جو میں نے کیا، جان بوجھ کر یا بھول کر، درپردہ یا کھلم کھلا اور میں توبہ کرتا ہوں اس کے حضور میں اس کے گناہ سے مجھے معلوم ہے اور اس کے گناہ سے جو مجھے معلوم نہیں۔ بےشک تو عیبوں کو جاننے والا اور عیبوں کو چھپانے والا ہے اور گناہوں کا بخشنے والا ہے اور گناہوں سے بچنے کی طاقت اور نیک کام کرنے کی قوت اللّٰہ ہی کی طرف سے ہے، جو عالیشان اور عظمت والا ہے۔"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UrduMeaningTitle" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UrduMeaning"
+            android:padding="12dp"
+            >
+
+            <TextView
+                android:id="@+id/player_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:thumbTint="#C6AE66"
+                android:progressTint="#C6AE66"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/player_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PlayRewind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear1">
+
+            <ImageView
+                android:id="@+id/bt_rew"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_fast_rewind_24" />
+
+            <ImageView
+                android:id="@+id/bt_play"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_pause_circle_outline_24" />
+
+            <ImageView
+                android:id="@+id/bt_pause"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_pause_circle_outline_24"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/bt_ff"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+
+                android:src="@drawable/ic_baseline_fast_forward_24" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

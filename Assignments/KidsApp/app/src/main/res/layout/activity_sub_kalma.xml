@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    android:background="#020A37"
+    tools:context=".sub_kalma">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/topConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/titleImage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/kalma"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toTopOf="@id/topConstraint" />
+
+
+            <TextView
+                android:id="@+id/QalmaTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6 QALMA'S"
+                android:textAlignment="center"
+                android:textColor="#C6AE66"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/topConstraint"
+                app:layout_constraintStart_toStartOf="@id/topConstraint"
+                app:layout_constraintTop_toBottomOf="@id/titleImage" />
+
+            <ImageView
+                android:id="@+id/headingLine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="10dp"
+                android:src="@drawable/l"
+                app:layout_constraintEnd_toEndOf="@id/QalmaTitle"
+                app:layout_constraintStart_toStartOf="@id/QalmaTitle"
+                app:layout_constraintTop_toBottomOf="@id/QalmaTitle" />
+
+            <ImageView
+                android:id="@+id/topLeftBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_left_border" />
+
+            <ImageView
+                android:id="@+id/topRightBorder"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/top_right_border" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/ImageQalma1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:onClick="qalma1"
+            app:layout_constraintEnd_toStartOf="@+id/ImageQalma2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topConstraint"
+            app:srcCompat="@drawable/qalma_image1" />
+
+        <ImageView
+            android:id="@+id/title1"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma1"
+            app:layout_constraintEnd_toEndOf="@id/ImageQalma1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma1"
+            app:layout_constraintTop_toBottomOf="@id/ImageQalma1"
+            app:srcCompat="@drawable/title_frame" />
+
+        <TextView
+            android:id="@+id/titleTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QALMA 1"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/title1"
+            app:layout_constraintEnd_toEndOf="@id/title1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title1"
+            app:layout_constraintStart_toStartOf="@id/title1"
+            app:layout_constraintTop_toTopOf="@id/title1" />
+
+        <ImageView
+            android:id="@+id/ImageQalma2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:onClick="qalma2"
+            app:layout_constraintBottom_toBottomOf="@id/ImageQalma1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ImageQalma1"
+            app:layout_constraintTop_toTopOf="@id/ImageQalma1"
+            app:srcCompat="@drawable/qalma_image2" />
+
+        <ImageView
+            android:id="@+id/title2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma2"
+            app:layout_constraintEnd_toEndOf="@id/ImageQalma2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma2"
+            app:layout_constraintTop_toBottomOf="@id/ImageQalma2"
+            app:srcCompat="@drawable/title_frame" />
+
+        <TextView
+            android:id="@+id/titleTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QALMA 2"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/title2"
+            app:layout_constraintEnd_toEndOf="@id/title2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title2"
+            app:layout_constraintStart_toStartOf="@id/title2"
+            app:layout_constraintTop_toTopOf="@id/title2" />
+
+        <ImageView
+            android:id="@+id/ImageQalma3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma1"
+            app:layout_constraintTop_toBottomOf="@id/title1"
+            app:srcCompat="@drawable/qalma_image3" />
+
+        <ImageView
+            android:id="@+id/title3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma3"
+            app:layout_constraintEnd_toEndOf="@+id/ImageQalma3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma3"
+            app:layout_constraintTop_toBottomOf="@id/ImageQalma3"
+            app:srcCompat="@drawable/title_frame" />
+
+        <TextView
+            android:id="@+id/titleTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QALMA 3"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/title3"
+            app:layout_constraintEnd_toEndOf="@id/title3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title3"
+            app:layout_constraintStart_toStartOf="@id/title3"
+            app:layout_constraintTop_toTopOf="@id/title3" />
+
+        <ImageView
+            android:id="@+id/ImageQalma4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma4"
+            app:layout_constraintEnd_toEndOf="@id/ImageQalma2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma2"
+            app:layout_constraintStart_toEndOf="@+id/ImageQalma3"
+            app:layout_constraintTop_toTopOf="@id/ImageQalma3"
+            app:srcCompat="@drawable/qalma_image4" />
+
+        <ImageView
+            android:id="@+id/title4"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma4"
+            app:layout_constraintEnd_toEndOf="@id/ImageQalma4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title3"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma4"
+            app:layout_constraintTop_toBottomOf="@id/ImageQalma4"
+            app:srcCompat="@drawable/title_frame" />
+
+        <TextView
+            android:id="@+id/titleTextView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QALMA 4"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/title4"
+            app:layout_constraintEnd_toEndOf="@id/title4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title4"
+            app:layout_constraintStart_toStartOf="@id/title4"
+            app:layout_constraintTop_toTopOf="@id/title4" />
+
+        <ImageView
+            android:id="@+id/ImageQalma5"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma5"
+            app:layout_constraintEnd_toEndOf="@+id/ImageQalma3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma3"
+            app:layout_constraintTop_toBottomOf="@id/title3"
+            app:srcCompat="@drawable/qalma_image5" />
+
+        <ImageView
+            android:id="@+id/title5"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma5"
+            app:layout_constraintEnd_toEndOf="@+id/ImageQalma5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma5"
+            app:layout_constraintTop_toBottomOf="@id/ImageQalma5"
+            app:srcCompat="@drawable/title_frame" />
+
+        <TextView
+            android:id="@+id/titleTextView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QALMA 5"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/title5"
+            app:layout_constraintEnd_toEndOf="@id/title5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title5"
+            app:layout_constraintStart_toStartOf="@id/title5"
+            app:layout_constraintTop_toTopOf="@id/title5" />
+
+        <ImageView
+            android:id="@+id/ImageQalma6"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma6"
+            app:layout_constraintBottom_toBottomOf="@id/ImageQalma5"
+            app:layout_constraintEnd_toEndOf="@id/ImageQalma4"
+            app:layout_constraintStart_toStartOf="@id/ImageQalma4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ImageQalma5"
+            app:layout_constraintTop_toTopOf="@id/ImageQalma5"
+            app:srcCompat="@drawable/qalma_image6" />
+
+        <ImageView
+            android:id="@+id/title6"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:onClick="qalma6"
+            app:layout_constraintEnd_toEndOf="@id/ImageQalma6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/ImageQalma6"
+            app:layout_constraintTop_toBottomOf="@id/ImageQalma6"
+            app:srcCompat="@drawable/title_frame" />
+
+        <TextView
+            android:id="@+id/titleTextView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QALMA 6"
+            android:textColor="#C6AE66"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/title6"
+            app:layout_constraintEnd_toEndOf="@id/title6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/title6"
+            app:layout_constraintStart_toStartOf="@id/title6"
+            app:layout_constraintTop_toTopOf="@id/title6" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

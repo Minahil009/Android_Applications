@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kidsapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/isl_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".Surah_yaseen" android:configChanges="orientation|screenSize" />
+        <activity android:name=".surah_rehman" android:configChanges="orientation|screenSize" />
+        <activity android:name=".four_kul" />
+        <activity android:name=".Namaz_general" />
+        <activity android:name=".Asma_ul_Husna" android:configChanges="orientation|screenSize"/>
+        <activity android:name=".Quran" />
+        <activity android:name=".Namaz_duas" />
+        <activity
+            android:name=".Videos"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".programs"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Qalma6"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Qalma5"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Qalma4"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Qalma3"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Qalma2"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".Qalma1"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".sub_kalma" />
+        <activity android:name=".sub_daily_duas" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
